@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192" role="img" aria-label="Помаленьку">
+  <title>Помаленьку</title>
+  <rect width="192" height="192" fill="#0A0A0A"/>
+  <g fill="#FC4D2D">
+    <rect x="39" y="52" width="115" height="22" rx="11"/>
+    <rect x="57" y="86" width="79" height="22" rx="11"/>
+    <rect x="74" y="120" width="45" height="22" rx="11"/>
+  </g>
+</svg>

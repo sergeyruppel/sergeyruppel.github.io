@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Политика конфиденциальности — Сергей Руппель</title>
+  <meta name="description"
+    content="Какие данные собирает сайт sergeyruppel.ru, зачем они нужны и как попросить их удалить.">
+  <link rel="canonical" href="https://sergeyruppel.ru/privacy.html">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light dark">
+
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.dataset.theme = "dark";
+      }
+    } catch (e) { }
+  </script>
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    /* колонка уже, чем на главной: длинный текст легче читать */
+    .legal-page .wrap {
+      max-width: 760px;
+    }
+
+    .legal {
+      padding: var(--section-space) 0;
+    }
+
+    .legal h1 {
+      font-size: clamp(28px, 3.4vw, 40px);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      text-wrap: balance;
+    }
+
+    .legal-date {
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .legal-lead {
+      margin-top: 26px;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--ink);
+    }
+
+    .legal h2 {
+      margin-top: 40px;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .legal p,
+    .legal li {
+      margin-top: 12px;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--muted);
+    }
+
+    .legal ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+
+    .legal li+li {
+      margin-top: 6px;
+    }
+
+    .legal a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: var(--line-strong);
+      transition: text-decoration-color 0.15s ease;
+    }
+
+    .legal a:hover {
+      text-decoration-color: var(--ink);
+    }
+  </style>
+</head>
+
+<body class="legal-page">
+
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <label class="switch">
+        <input class="switch__input" type="checkbox" id="theme-toggle" role="switch" aria-label="Тёмная тема">
+        <span class="switch__track" aria-hidden="true"></span>
+      </label>
+      <nav class="nav" aria-label="Разделы страницы">
+        <a href="/">На главную</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="legal">
+      <div class="wrap">
+        <h1>Политика конфиденциальности</h1>
+        <p class="legal-date">Обновлено 17 ноября 2026</p>
+
+        <p class="legal-lead">sergeyruppel.ru — личная страница Сергея Руппеля. Здесь нет регистрации, форм
+          и личного кабинета. Ниже — какие данные всё же собираются и что с ними происходит.</p>
+
+        <h2>Какие данные собираются</h2>
+        <p>На сайте подключена Яндекс.Метрика — сервис веб-аналитики. Через него собираются обезличенные
+          данные о посещениях:</p>
+        <ul>
+          <li>IP-адрес и файлы cookie;</li>
+          <li>тип устройства, браузер, разрешение экрана, язык;</li>
+          <li>страницы, время на сайте, источник перехода;</li>
+          <li>клики и движения курсора — включён Вебвизор: он записывает действия на странице, но не то,
+            что происходит в других вкладках и на устройстве.</li>
+        </ul>
+        <p>Своих форм и полей ввода на сайте нет. В браузере хранится единственная настройка — выбранная
+          тема, светлая или тёмная.</p>
+
+        <h2>Зачем это нужно</h2>
+        <p>Чтобы понимать, какие разделы читают, и исправлять ошибки в вёрстке. Данные не используются
+          для рекламы, не продаются и не передаются третьим лицам, кроме самого сервиса аналитики.</p>
+
+        <h2>Кто обрабатывает данные</h2>
+        <p>Яндекс.Метрика — сервис ООО «Яндекс». Его условия: <a href="https://yandex.ru/legal/confidential/"
+            target="_blank" rel="noopener">yandex.ru/legal/confidential</a>.</p>
+
+        <h2>Cookie</h2>
+        <p>Cookie ставит только счётчик Метрики. Их можно отключить в настройках браузера — сайт
+          продолжит работать, просто визит не попадёт в статистику.</p>
+
+        <h2>Если вы написали мне</h2>
+        <p>Обращаясь по почте или в мессенджеры, вы передаёте своё имя и контакты. Они используются
+          только чтобы ответить, и никому не передаются.</p>
+
+        <h2>Ваши права</h2>
+        <p>Можно попросить удалить данные, связанные с вашими визитами, или отозвать согласие — напишите
+          на <a href="mailto:sergeyruppel@ya.ru">sergeyruppel@ya.ru</a>. Отвечу и сделаю, что можно сделать
+          без удаления всей статистики сайта.</p>
+
+        <h2>Изменения</h2>
+        <p>Если что-то поменяется, обновлю дату в начале страницы. О заметных изменениях напишу там же,
+          отдельной пометкой.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">© <span id="year">2026</span> Сергей Руппель · <a href="/">На главную</a></div>
+  </footer>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=114305701', 'ym');
+
+    ym(114305701, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce: true, trackLinks: true });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/114305701" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+</body>
+
+</html>

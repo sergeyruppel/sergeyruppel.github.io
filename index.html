@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Сергей Руппель: разработка мобильных приложений</title>
+  <meta name="description"
+    content="Сергей Руппель: разработка кроссплатформенных мобильных приложений. Проектирование, публикация и поддержка приложений для мобильных платформ.">
+  <link rel="canonical" href="https://sergeyruppel.ru/">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light dark">
+  <meta name="author" content="Сергей Руппель">
+
+  <!-- тема применяется до первой отрисовки, иначе мелькает светлый фон -->
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.dataset.theme = "dark";
+      }
+    } catch (e) { }
+  </script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Сергей Руппель">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Сергей Руппель: разработка мобильных приложений">
+  <meta property="og:description" content="Разработка мобильных приложений. От идеи и прототипа до релиза.">
+  <meta property="og:url" content="https://sergeyruppel.ru/">
+  <meta property="og:image" content="https://sergeyruppel.ru/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Сергей Руппель: разработка мобильных приложений">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Сергей Руппель: разработка мобильных приложений">
+  <meta name="twitter:description" content="От идеи и прототипа до релиза.">
+  <meta name="twitter:image" content="https://sergeyruppel.ru/og-image.jpg">
+
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="script.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Сергей Руппель",
+    "url": "https://sergeyruppel.ru/",
+    "email": "sergeyruppel@ya.ru",
+    "jobTitle": "Разработчик мобильных приложений",
+    "description": "Разработчик кроссплатформенных мобильных приложений.",
+    "knowsAbout": ["Flutter", "iOS", "Android", "Мобильная разработка", "Разработка приложений"],
+    "sameAs": [
+      "https://t.me/sergeyruppel",
+      "https://max.ru/u/f9LHodD0cOKE2TDCVuSM6sBvz00FfilNUJwwnV3EtzNXX3JXoLwHIVCT6Qw"
+    ],
+    "image": "https://sergeyruppel.ru/og-image.jpg"
+  }
+  </script>
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <label class="switch">
+        <input class="switch__input" type="checkbox" id="theme-toggle" role="switch" aria-label="Тёмная тема">
+        <span class="switch__track" aria-hidden="true"></span>
+      </label>
+      <nav class="nav" aria-label="Разделы страницы">
+        <a href="#apps">Приложения</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1><span class="wave" aria-hidden="true">👋</span> Привет, меня&nbsp;зовут Сергей</h1>
+          <p>Я&nbsp;разрабатываю мобильные приложения — от&nbsp;идеи и&nbsp;прототипа до&nbsp;публикации.</p>
+        </div>
+        <img class="hero-photo" src="photo.webp" alt="Сергей Руппель" width="760" height="760" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="section" id="apps">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Мои проекты</h2>
+          <p>То, что я делаю сам — от идеи до релиза.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <img class="card-icon" src="app-icon.svg" alt="" width="60" height="60">
+            <div class="card-body">
+              <p class="card-cat">Финансы</p>
+              <h3>Помаленьку: бюджет на день</h3>
+              <p class="card-desc">Бюджет на срок: остаток, ориентир на день и траты в один тап. Без таблиц.</p>
+              <div class="card-store">
+                <p class="card-desc">На модерации.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Контакты</h2>
+          <p>Сотрудничество, вопросы, идеи и отзывы.</p>
+        </div>
+
+        <ul class="contacts">
+          <li class="contact-item">
+            <a class="chip" href="mailto:sergeyruppel@ya.ru" data-copy="sergeyruppel@ya.ru">Почта</a>
+            <span class="copy-toast" role="status" aria-live="polite"></span>
+          </li>
+          <li>
+            <a class="chip" href="https://t.me/sergeyruppel" target="_blank" rel="noopener">Telegram</a>
+          </li>
+          <li>
+            <a class="chip" href="https://max.ru/u/f9LHodD0cOKE2TDCVuSM6sBvz00FfilNUJwwnV3EtzNXX3JXoLwHIVCT6Qw"
+              target="_blank" rel="noopener">Max</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">© <span id="year">2026</span> Сергей Руппель · <a href="/privacy.html">Политика
+        конфиденциальности</a></div>
+  </footer>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=114305701', 'ym');
+
+    ym(114305701, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce: true, trackLinks: true });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/114305701" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+</body>
+
+</html>

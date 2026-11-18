@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <title>favicon.svg</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M21 11 L43 11 C54.598 11 64 20.402 64 32 L64 32 C64 43.598 54.598 53 43 53 L21 53 C9.402 53 0 43.598 0 32 L0 32 C0 20.402 9.402 11 21 11 Z" fill="#17171a"/>
+    <path d="M21 17 L43 17 C51.284 17 58 23.716 58 32 L58 32 C58 40.284 51.284 47 43 47 L21 47 C12.716 47 6 40.284 6 32 L6 32 C6 23.716 12.716 17 21 17 Z" fill="#ffffff"/>
+    <circle cx="43" cy="32" r="10.5" fill="#17171a"/>
+  </g>
+</svg>

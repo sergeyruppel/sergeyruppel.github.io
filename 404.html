@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Страница не найдена — Сергей Руппель</title>
+  <meta name="description" content="Такой страницы нет. Вернитесь на главную — sergeyruppel.ru.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light dark">
+
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.dataset.theme = "dark";
+      }
+    } catch (e) { }
+  </script>
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
+
+  <style>
+    /* подвал прижат к низу, даже если экран высокий */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      display: flex;
+      flex: 1 0 auto;
+    }
+
+    .error {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      text-align: center;
+    }
+
+    .error-code {
+      font-size: clamp(76px, 15vw, 168px);
+      font-weight: 600;
+      line-height: 0.9;
+      letter-spacing: -0.05em;
+      color: var(--ink);
+    }
+
+    .error h1 {
+      margin-top: 10px;
+      font-size: clamp(20px, 2.4vw, 28px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .error-text {
+      margin-top: 12px;
+      font-size: 16px;
+      color: var(--muted);
+    }
+
+    .error-link {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <label class="switch">
+        <input class="switch__input" type="checkbox" id="theme-toggle" role="switch" aria-label="Тёмная тема">
+        <span class="switch__track" aria-hidden="true"></span>
+      </label>
+      <nav class="nav" aria-label="Разделы страницы">
+        <a href="/">На главную</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="section error">
+      <div class="wrap">
+        <p class="error-code">404</p>
+        <h1>Такой страницы нет</h1>
+        <p class="error-text">Возможно, адрес изменился или в ссылке опечатка.</p>
+        <p class="error-link"><a class="chip" href="/">На главную</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">© <span id="year">2026</span> Сергей Руппель · <a href="/privacy.html">Политика конфиденциальности</a></div>
+  </footer>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=114305701', 'ym');
+
+    ym(114305701, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce: true, trackLinks: true });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/114305701" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+</body>
+
+</html>
