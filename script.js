@@ -78,68 +78,6 @@
     }
   }
 
-  /* ---------- копирование почты ---------- */
-
-  function copyText(text) {
-    if (navigator.clipboard && window.isSecureContext) {
-      return navigator.clipboard.writeText(text);
-    }
-
-    /* запасной путь для file:// и старых браузеров */
-    return new Promise(function (resolve, reject) {
-      var area = document.createElement("textarea");
-      area.value = text;
-      area.setAttribute("readonly", "");
-      area.style.position = "fixed";
-      area.style.top = "-1000px";
-      document.body.appendChild(area);
-      area.select();
-
-      var ok = false;
-      try {
-        ok = document.execCommand("copy");
-      } catch (e) {
-        ok = false;
-      }
-
-      document.body.removeChild(area);
-      if (ok) resolve();
-      else reject(new Error("copy failed"));
-    });
-  }
-
-  function initCopy() {
-    document.querySelectorAll("[data-copy]").forEach(function (link) {
-      var item = link.closest(".contact-item");
-      var toast = item && item.querySelector(".copy-toast");
-      var timer;
-
-      function show(message) {
-        if (!toast) return;
-        toast.textContent = message;
-        toast.classList.add("is-visible");
-        clearTimeout(timer);
-        timer = setTimeout(function () {
-          toast.classList.remove("is-visible");
-        }, 2400);
-      }
-
-      link.addEventListener("click", function (event) {
-        event.preventDefault();
-        copyText(link.getAttribute("data-copy")).then(
-          function () {
-            show("Адрес скопирован");
-          },
-          function () {
-            /* буфер недоступен — ведём себя как обычная ссылка mailto */
-            window.location.href = link.getAttribute("href");
-          }
-        );
-      });
-    });
-  }
-
   initYear();
   initTheme();
-  initCopy();
 })();

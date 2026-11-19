@@ -415,31 +415,11 @@ main:focus-visible {
   background: var(--hover);
 }
 
-.contact-item {
-  position: relative;
-}
-
-.copy-toast {
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 50%;
-  z-index: 5;
-  padding: 7px 12px;
-  border-radius: 8px;
-  background: var(--ink);
-  color: var(--bg);
-  font-size: 13px;
-  line-height: 1.2;
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  transform: translate(-50%, -4px);
-  transition: opacity 0.18s ease, transform 0.18s ease;
-}
-
-.copy-toast.is-visible {
-  opacity: 1;
-  transform: translate(-50%, 0);
+/* почта отдельной строкой над мессенджерами */
+.contacts__mail {
+  display: flex;
+  flex: 1 0 100%;
+  justify-content: center;
 }
 
 /* ---------- подвал ---------- */

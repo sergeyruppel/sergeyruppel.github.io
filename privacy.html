@@ -37,9 +37,12 @@
       flex: 1 0 auto;
     }
 
-    /* колонка уже, чем на главной: длинный текст легче читать */
-    .legal-page .wrap {
-      max-width: 760px;
+    /* ширина колонки — как на главной, ограничение только по длине строки */
+    .legal p,
+    .legal li,
+    .legal-lead,
+    .legal h2 {
+      max-width: 62ch;
     }
 
     .legal {
